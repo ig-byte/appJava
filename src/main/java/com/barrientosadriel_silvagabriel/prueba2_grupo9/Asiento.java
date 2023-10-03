@@ -20,6 +20,9 @@ public class Asiento {
         this.vip = vip;
     }
 
+    public Asiento() {
+    }
+    
     public Asiento(boolean vip) {
         this.vip = vip;
     }

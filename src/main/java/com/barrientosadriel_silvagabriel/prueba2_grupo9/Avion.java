@@ -65,6 +65,7 @@ public class Avion {
                             check = true;
                             vip = true;
                             descuento = 0.85F;
+                            System.out.println("Descuento por usuario VIP: 15%");
                             break;
                         case 2:
                             check = true;

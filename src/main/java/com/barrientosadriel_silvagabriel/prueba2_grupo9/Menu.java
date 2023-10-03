@@ -20,22 +20,23 @@ public class Menu {
          * 
          */
         do {
-            System.out.println("Menu");
+            System.out.println("\n---- Menu ----");
             System.out.println("1. Ver Asientos disponibles");
             System.out.println("2. Comprar Asiento");
             System.out.println("3. Anular Vuelo");
             System.out.println("4. Salir");
-            System.out.print("- Seleccione una opcion: ");
+            System.out.print("Seleccione una opcion: ");
 
             opcion = Integer.parseInt(br.readLine());
 
             switch (opcion) {
                 case 1:
+                    System.out.println("\n---- Lista de asientos ----");
                     v1.mostrarAsientos();
                     break;
                 case 2:
                     int vuelo;
-                    System.out.println("Compra de asiento");
+                    System.out.println("\n---- Compra de asientos ----");
 
                     v1.mostrarAsientos();
                     
@@ -45,13 +46,13 @@ public class Menu {
                     break;
                 case 3:
                     int vueloAnulado;
-                    System.out.println("Anulación de vuelo");
+                    System.out.println("\n---- Anulación de vuelo ----");
                     System.out.print("Ingrese el vuelo a anular: ");
                     vueloAnulado = Integer.parseInt(br.readLine());
                     v1.anularVuelo(vueloAnulado);
                     break;
                 case 4:
-                    System.out.println("Saliendo...\n");
+                    System.out.println("\nSaliendo...\n");
                     System.out.println("-- Versión 1.0");
                     System.out.println("-- Adriel Barrientos");
                     System.out.println("-- Gabriel Silva");

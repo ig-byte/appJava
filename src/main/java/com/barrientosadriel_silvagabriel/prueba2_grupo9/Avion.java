@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Avion {
     Asiento[] asientosPasajeros = new Asiento[42];
-
+    
     public void poblarAvion() {
         boolean vip;
         for (int i = 1; i <= 42; i++) {
@@ -15,7 +15,7 @@ public class Avion {
                 vip = false;
             else
                 vip = true;
-            Asiento asiento = new Asiento(vip);
+            asientosPasajeros[i-1] = new Asiento(vip);
         }
     }
 
@@ -88,8 +88,16 @@ public class Avion {
     }
 
     public void mostrarAsientos() {
+        String aux;
+        String[] au = new String[42];
         for (int i = 0; i < asientosPasajeros.length; i++) {
-            System.out.println(asientosPasajeros[i]);
+            if (asientosPasajeros[i].pasajero == null)
+                aux = Integer.toString(i);
+            else if (i > 10)
+                aux = "x ";
+            else
+                aux = "x";
+            au[i] = aux;
         }
     }
 

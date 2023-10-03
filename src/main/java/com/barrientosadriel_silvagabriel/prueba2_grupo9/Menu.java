@@ -51,10 +51,13 @@ public class Menu {
                     v1.anularVuelo(vueloAnulado);
                     break;
                 case 4:
-                    System.out.println("Salir");
+                    System.out.println("Saliendo...\n");
+                    System.out.println("-- Versión 1.0");
+                    System.out.println("-- Adriel Barrientos");
+                    System.out.println("-- Gabriel Silva");
                     break;
                 default:
-                    System.out.println("Opcion Invalida !");
+                    System.out.println("¡Opcion Invalida!");
                     break;
             }
         } while (opcion != 4);

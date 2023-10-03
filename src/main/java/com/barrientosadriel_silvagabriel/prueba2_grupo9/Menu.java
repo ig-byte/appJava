@@ -25,7 +25,7 @@ public class Menu {
             System.out.println("2. Comprar Asiento");
             System.out.println("3. Anular Vuelo");
             System.out.println("4. Salir");
-            System.out.println("- Seleccione una opcion:");
+            System.out.print("- Seleccione una opcion: ");
 
             opcion = Integer.parseInt(br.readLine());
 
@@ -42,14 +42,6 @@ public class Menu {
                     System.out.print("Ingrese el vuelo a comprar: ");
                     vuelo = Integer.parseInt(br.readLine());
                     v1.comprarPasaje(vuelo);
-                    
-                    /*
-                     * - Asientos
-                     * - Condicion para avisar que el asiento este disponible
-                     * - Pedir datos del pasajero
-                     * - Revisar si es VIP
-                     * - Publicar valor de pasaje y descuento si aplica
-                     */
                     break;
                 case 3:
                     int vueloAnulado;
